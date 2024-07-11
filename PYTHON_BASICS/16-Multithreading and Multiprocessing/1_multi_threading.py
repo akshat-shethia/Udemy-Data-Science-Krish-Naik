@@ -9,12 +9,12 @@ import time
 def print_numbers():
     for i in range(5):
         time.sleep(2)
-        print(f"Number:{i}")
+        print(f"Number: {i} ")
 
 def print_letter():
     for letter in "abcde":
         time.sleep(2)
-        print(f"Letter: {letter}")
+        print(f"Letter: {letter} ")
 
 ##create 2 threads
 t1=threading.Thread(target=print_numbers)
