@@ -6,3 +6,4 @@ flask
 memory_profiler
 streamlit
 bs4
+matplotlib

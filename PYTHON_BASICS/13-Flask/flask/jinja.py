@@ -40,7 +40,7 @@ def success(score):
     else:
         res="FAILED"
 
-    return render_template('result.html',results=res)
+    return render_template('result.html',results=res) # Sending the final decision
 
 ## Variable Rule
 @app.route('/successres/<int:score>')
@@ -53,7 +53,7 @@ def successres(score):
     
     exp={'score':score,"res":res}
 
-    return render_template('result1.html',results=exp)
+    return render_template('result1.html',results=exp) # Sending the result and final decision
 
 ## if confition
 @app.route('/sucessif/<int:score>')
