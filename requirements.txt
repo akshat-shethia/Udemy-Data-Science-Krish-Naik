@@ -1,3 +1,8 @@
 scikit-learn
 pandas
 ipykernel
+seaborn
+flask
+memory_profiler
+streamlit
+bs4

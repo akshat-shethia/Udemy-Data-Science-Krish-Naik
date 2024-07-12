@@ -13,8 +13,6 @@ import math
 import sys
 import time
 
-# Increase the maximum number of digits for integer conversion
-sys.set_int_max_str_digits(100000)
 
 ## function to compute factorials of a given number 
 
