@@ -8,3 +8,4 @@ streamlit
 bs4
 matplotlib
 streamlit
+statsmodels
