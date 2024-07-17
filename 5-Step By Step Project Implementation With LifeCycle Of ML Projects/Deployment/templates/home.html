@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FWI Prediction</title>
+    </head>
+    <body>
+        <div class="login">
+            <h1>FWI Prediction</h1>
+          
+            <!-- Main Input For Receiving Query to our ML -->
+            <form action="{{ url_for('predict_datapoint') }}" method="post">
+              <input type="text" name="Temperature" placeholder="Temperature" required="required" />
+              <input type="text" name="RH" placeholder="RH" required="required" /><br>
+              <input type="text" name="Ws" placeholder="Ws" required="required" /><br>
+              <input type="text" name="Rain" placeholder="Rain" required="required" /><br>
+              <input type="text" name="FFMC" placeholder="FFMC" required="required" /><br>
+              <input type="text" name="DMC" placeholder="DMC" required="required" /><br>
+              <input type="text" name="ISI" placeholder="ISI" required="required" /><br>
+              <input type="text" name="Classes" placeholder="Classes" required="required" /><br>
+              <input type="text" name="Region" placeholder="Region" required="required" /><br>
+          
+              <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+          </div>
+        <h2>
+            THE FWI PREDICTION IS {{results}}
+        </h2>
+    </body>
+</html>
