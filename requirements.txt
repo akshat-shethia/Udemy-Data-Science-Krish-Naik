@@ -12,3 +12,4 @@ statsmodels
 plotly
 xgboost
 kneed
+nltk
