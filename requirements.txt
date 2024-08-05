@@ -13,3 +13,6 @@ plotly
 xgboost
 kneed
 nltk
+gensim
+tensorflow
+tensorboard
