@@ -16,3 +16,5 @@ nltk
 gensim
 tensorflow
 tensorboard
+keras
+scikeras
